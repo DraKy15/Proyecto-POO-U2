@@ -2,7 +2,10 @@ package menu;
 
 import cine.Cine;
 import pelicula.Pelicula;
+import pelicula.utils.Categoria;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -10,13 +13,14 @@ public class Menu {
 
     Scanner read = new Scanner(System.in);
     Cine cine = new Cine();
+    Pelicula pelicula;
 
 public void mostrarMenu() {
     boolean salir = false;
 
     while (!salir) {
         System.out.println("\n Sistema Integral de Gestión para Cinépolis.");
-        System.out.println("Elige una de las siguientes opciones: ");
+        System.out.println("Elige una de las siguientes opciones: \n");
         System.out.println("1. Agregar película.");
         System.out.println("2. Modificar detalles de la película.");
         System.out.println("3. Asignar película a sala.");
@@ -24,37 +28,82 @@ public void mostrarMenu() {
         System.out.println("5. Administrar películas en cartelera.");
         System.out.println("6. Administrar sala.");
         System.out.println("7. Venta de boletos.");
-        System.out.println("8. Salir");
+        System.out.println("8. Mostrar películas.");
+        System.out.println("9. Salir");
         int opcion = read.nextInt();
 
         switch (opcion) {
             case 1:
                 System.out.println("\n----- AGREGAR PELÍCULA -----\n");
                 System.out.print("Ingresa el nombre de la película: ");
+                read.nextLine();
                 String nombre = read.nextLine();
-                System.out.print("Ingresa la categoría de la película: ");
-                String categoria = read.nextLine();
+                System.out.println("Ingresa la categoría de la película: ");
+                Categoria categoria;
+                boolean band=false;
+                    System.out.println("1. A");
+                    System.out.println("2. B");
+                    System.out.println("3. C");
+                    System.out.println("4. D");
+                int num = read.nextInt();
+
+                while(!band){
+
+                switch (num) {
+                    case 1:
+                        categoria = Categoria.A;
+                        band = true;
+                        break;
+                    case 2:
+                        categoria = Categoria.B;
+                        band = true;
+                        break;
+                    case 3:
+                        categoria = Categoria.C;
+                        band = true;
+                        break;
+                    case 4:
+                        categoria = Categoria.D;
+                        band = true;
+                        break;
+                    default:
+                        System.out.println("No existe esa opción");
+                    }
+                }
                 System.out.print("Agregar sinópsis: ");
                 String Sinopsis = read.nextLine();
-
-                LocalDateTime Duracion= LocalDateTime.of(2005,06, 01, 10,30);
-                while(!cine.validadFechaFuncion(Duracion))
-                System.out.println("Ingresar el día de la función: ");
-                int dia = read.nextInt();
-                System.out.println("Ingresar mes de la función: ");
-                int mes = read.nextInt();
-                System.out.println("Ingresar año de la función: ");
-                int año = read.nextInt();
+                read.nextLine();
                 System.out.print("Ingresa la duración de horas de la película: ");
                 int horas = read.nextInt();
-                System.out.println("Ingresa la duración de minutos de la película: ");
+                System.out.print("Ingresa la duración de minutos de la película: ");
                 int minutos = read.nextInt();
-                LocalDateTime DuracionPelicula = LocalDateTime.of(año, mes, dia, horas, minutos);
-                Pelicula pelicula= new Pelicula(nombre, categoria, DuracionPelicula, Sinopsis);
+                LocalTime Duracion = LocalTime.of(horas, minutos);
+                String idPelicula= cine.generarIDpelicula(nombre);
+
+                LocalDate FechaFuncion= LocalDate.of(2005,06, 01);
+
+                while(!cine.validadFechaFuncion(FechaFuncion)) {
+                    System.out.println("Ingresar el día de la función: ");
+                    int dia = read.nextInt();
+                    System.out.println("Ingresar mes de la función: ");
+                    int mes = read.nextInt();
+                    System.out.println("Ingresar año de la función: ");
+                    int año = read.nextInt();
+
+                    FechaFuncion = LocalDate.of(año, mes, dia);
+
+                    if(!cine.validadFechaFuncion(FechaFuncion)){
+                        System.out.println("La función no puede estar registrada en el pasado.");
+                    }
+
+                }
+
+                pelicula= new Pelicula(idPelicula, nombre, Duracion, FechaFuncion, Sinopsis);
                 cine.agregarPeliculas(pelicula);
                 break;
 
             case 2:
+                System.out.println("\n----- MODIFICAR PELÍCULA -----\n");
                 break;
             case 3:
                 break;
@@ -67,6 +116,10 @@ public void mostrarMenu() {
             case 7:
                 break;
             case 8:
+                System.out.println("\n----- MOSTRAR PELÍCULAS -----\n");
+                cine.mostrarPeliculas();
+                break;
+            case 9:
                 salir = true;
                 System.out.println("Gracias por usar el Sistema Integral de Gestión para Cinépolis");
                 break;
