@@ -6,14 +6,12 @@ import pelicula.utils.Categoria;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class Menu {
 
     Scanner read = new Scanner(System.in);
-    Cine cine = new Cine();
-    Pelicula pelicula;
+    private Cine cine = new Cine();
 
 public void mostrarMenu() {
     boolean salir = false;
@@ -39,7 +37,7 @@ public void mostrarMenu() {
                 read.nextLine();
                 String nombre = read.nextLine();
                 System.out.println("Ingresa la categoría de la película: ");
-                Categoria categoria;
+                Categoria categoria=Categoria.A;
                 boolean band=false;
                     System.out.println("1. A");
                     System.out.println("2. B");
@@ -83,11 +81,11 @@ public void mostrarMenu() {
                 LocalDate FechaFuncion= LocalDate.of(2005,06, 01);
 
                 while(!cine.validadFechaFuncion(FechaFuncion)) {
-                    System.out.println("Ingresar el día de la función: ");
+                    System.out.print("Ingresar el día de la función: ");
                     int dia = read.nextInt();
-                    System.out.println("Ingresar mes de la función: ");
+                    System.out.print("Ingresar mes de la función: ");
                     int mes = read.nextInt();
-                    System.out.println("Ingresar año de la función: ");
+                    System.out.print("Ingresar año de la función: ");
                     int año = read.nextInt();
 
                     FechaFuncion = LocalDate.of(año, mes, dia);
@@ -95,11 +93,10 @@ public void mostrarMenu() {
                     if(!cine.validadFechaFuncion(FechaFuncion)){
                         System.out.println("La función no puede estar registrada en el pasado.");
                     }
-
                 }
 
-                pelicula= new Pelicula(idPelicula, nombre, Duracion, FechaFuncion, Sinopsis);
-                cine.agregarPeliculas(pelicula);
+                Pelicula pelicula= new Pelicula(idPelicula, nombre, Duracion, FechaFuncion, Sinopsis, categoria);
+                cine.agregarPelicula(pelicula);
                 break;
 
             case 2:
