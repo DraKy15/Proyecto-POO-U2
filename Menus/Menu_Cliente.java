@@ -13,7 +13,7 @@ public class Menu_Cliente {
     Scanner read = new Scanner(System.in);
     Cine cine = new Cine();
     Reservacion reservacion = new Reservacion();
-    ComprasBoletos comprarBoletos = new ComprasBoletos();
+
 
     public int mostrarMenuCliente() {
         System.out.println("\nSISTEMA HOSPITAL");

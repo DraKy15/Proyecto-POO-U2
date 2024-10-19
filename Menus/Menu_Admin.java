@@ -24,7 +24,7 @@ public class Menu_Admin {
     public int mostrarMenuAdmin() {
         System.out.println("\nSISTEMA CINE");
         System.out.println("1. Registrar cliente");
-        System.out.println("2. Seleccionar asientos cine");
+        System.out.println("2. Registrar sala");
         System.out.println("3. Validar compra");
         System.out.println("4. Validar compra adicional");
         System.out.println("5. Seleccionar asientos");
@@ -60,8 +60,57 @@ public class Menu_Admin {
                 Cliente cliente = new Cliente(id, apellidoCliente, nombreCliente, curpCliente, direccionCliente, fechaNacimiento);
                 cine.registrarCliente(cliente);
                 break;
-            case 6:
+            case 2:
+                System.out.println("Ingresa número de sala: ");
+                int numsala= read.nextInt();
+                System.out.println("Ingresa capacidad de asientos");
+                int capacidadAsientos= read.nextInt();
+                System.out.println("Ingresa distribución de asientos");
+                int distribucionAsientos= read.nextInt();
+                int salafuncion[][]= new int [capacidadAsientos][distribucionAsientos];
+                /*int opcionsala=0;
+                while(opcionsala!=3) {
+                    System.out.println("Asigna premium o VIP al asiento");
+                    System.out.println("1. Premium");
+                    System.out.printf("2. VIP");
+                    System.out.println("3. No quiero asignar premium o VIP");
+
+                    opcionsala = read.nextInt();
+                    int decision=0;
+                switch (opcionsala) {
+                        case 1:
+                            do {
+                            System.out.println("Elegiste asignar premium a un asiento");
+                            System.out.printf("Cual fila de asiento quieres asignar el premium?");
+                            int filapremium = read.nextInt();
+                            System.out.println("Cual columna de asiento quieres asignar el premium?");
+                            int columnapremium = read.nextInt();
+                            salafuncion[filapremium][columnapremium] = 2;
+                            System.out.println("Quieres asignar otro premium?");
+                            System.out.println("1. Si");
+                            System.out.println("2. No");
+                            decision = read.nextInt();
+                    }while(decision!=2);
+                            break;
+                        case 2:
+                            do {
+                                System.out.println("Elegiste asignar VIP a un asiento");
+                                System.out.printf("Cual fila de asiento quieres asignar el VIP?");
+                                int filaVIP = read.nextInt();
+                                System.out.println("Cual columna de asiento quieres asignar el VIP?");
+                                int columnaVIP = read.nextInt();
+                                salafuncion[filaVIP][columnaVIP] = 3;
+                                System.out.println("Quieres asignar otro VIP?");
+                                System.out.println("1. Si");
+                                System.out.println("2. No");
+                                decision = read.nextInt();
+                            }while(decision!=2);
+                            break;
+                        case 3:
+                            return;
+                }*/
+                }
 
         }
     }
-}
+
