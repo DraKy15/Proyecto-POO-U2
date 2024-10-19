@@ -21,4 +21,32 @@ public class Sala {
         this.HorariosSala = horariosSala;
         this.distribucion = Distribucion;
     }
+
+    public int getID() {
+        return ID;
+    }
+
+    public int getCapacidadDeAsientos() {
+        return CapacidadDeAsientos;
+    }
+
+    public int getCantidadDeAsientosPremium() {
+        return CantidadDeAsientosPremium;
+    }
+
+    public int getCantidadDeAsientosVIP() {
+        return CantidadDeAsientosVIP;
+    }
+
+    public String getPeliculasProyecta() {
+        return PeliculasProyecta;
+    }
+
+    public LocalDate getHorariosSala() {
+        return HorariosSala;
+    }
+
+    public String getDistribucion() {
+        return distribucion;
+    }
 }
