@@ -4,6 +4,9 @@ import pelicula.Pelicula;
 import java.util.Random;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Scanner;
+
+
 
 public class Cine {
 
@@ -11,6 +14,7 @@ public class Cine {
     public ArrayList <Cliente> listaClientes = new ArrayList<>();
     Random rand = new Random();
     Cine cine=new Cine();
+    Scanner read = new Scanner(System.in);;
 
     public void agregarPelicula(Pelicula pelicula){
         listaPeliculas.add(pelicula);
