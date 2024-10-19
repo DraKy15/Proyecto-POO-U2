@@ -2,7 +2,7 @@ package ClasesNuevas;
 
 import cliente.Cliente;
 import pelicula.Pelicula;
-import sala.Asiento;
+import sala.utils.Asiento;
 import sala.Sala;
 
 public class Boleto {

@@ -36,7 +36,6 @@ public class Cine {
 
     public void mostrarPeliculas(){
 
-        System.out.println("Ya entró");
         if (this.listaPeliculas.isEmpty()){
             System.out.println("Aún no hay películas registradas :(");
             return;
@@ -44,5 +43,13 @@ public class Cine {
         for (Pelicula pelicula : this.listaPeliculas) {
             System.out.println(pelicula.mostrarPelicula());
         }
+    }
+    public String genereadorIDsala(int NoDeSala){
+
+        int aleatorio = rand.nextInt(10000,70000);
+        int dia = LocalDate.now().getDayOfMonth();
+        int numero = NoDeSala;
+        String ID=String.format("S%c%c%d%d" , aleatorio, dia, numero);
+        return ID.toUpperCase();
     }
 }

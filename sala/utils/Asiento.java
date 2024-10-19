@@ -1,4 +1,4 @@
-package sala;
+package sala.utils;
 
 public enum Asiento {
     VIP,
