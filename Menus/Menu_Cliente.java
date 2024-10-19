@@ -2,7 +2,7 @@
 package Menus;
 
 import cine.Cine;
-import ClasesNuevas.ComprasBoletos;
+import compraBoletos.ComprasBoletos;
 import ClasesNuevas.Reservacion;
 import java.util.Scanner;
 import cliente.Cliente;
@@ -21,6 +21,7 @@ public class Menu_Cliente {
         System.out.println("2. Comprar boletos");
         System.out.println("3. Ver Cartelera");
         System.out.println("4. Reservar asientos");
+        System.out.println("5. Registrar fecha de nacimiento");
         System.out.println("5. Salir");
 
         System.out.println("Ingrese una opcion: ");
@@ -33,10 +34,10 @@ public class Menu_Cliente {
         switch (opcion) {
             case 1:
                 System.out.println("\n Tus Reservacione: ");
-                reservacion.mostrarReservaciones(cliente.getId());
+
                 break;
             case 2:
-                comprarBoletos.
+
 
                 break;
 
@@ -45,8 +46,14 @@ public class Menu_Cliente {
                 cine.mostrarPeliculas();
                 break;
             case 4:
-                
+                System.out.println("\n Reservar asientos");
                 break;
+                case 5:
+                    System.out.println("Ingresa tu CURP");
+                    String curp=read.next();
+
+            case 6:
+
         }
     }
 }

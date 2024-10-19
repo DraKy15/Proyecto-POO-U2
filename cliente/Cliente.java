@@ -1,12 +1,14 @@
 package cliente;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Cliente {
-    String id, apellidos, nombre, CURP;
+    public String id, apellidos, nombre, CURP;
     private String direccion;
-    LocalDate fechaNacimiento;
+    public LocalDate fechaNacimiento;
+
 
     public Cliente(String id, String apellidos, String nombre, String CURP, String direccion, LocalDate fechaNacimiento) {
         this.id = id;
@@ -40,19 +42,5 @@ public class Cliente {
     public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
-
-    public String generarid(String nombre, String apellido){
-        Random random=new Random();
-        int num_al= random.nextInt(0, 100000);
-        char primeraLetra=nombre.charAt(0);
-        char segundaLetra=nombre.charAt(1);
-        char primeraLetraApellido=apellido.charAt(0);
-        char segundaLetraApellido=apellido.charAt(1);
-        LocalDate fecha=LocalDate.now();
-        String idC=String.format("C%c%c%c%c%d", primeraLetra, segundaLetra, primeraLetraApellido, segundaLetraApellido, num_al);
-        return idC;
     }
-    public void generarVIP(String id){
 
-    }
-}

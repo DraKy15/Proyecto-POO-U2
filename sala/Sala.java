@@ -1,6 +1,7 @@
 package sala;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Sala {
 
@@ -10,6 +11,7 @@ public class Sala {
     public String PeliculasProyecta;
     public LocalDate HorariosSala;
     public String distribucion;
+    public ArrayList <Sala> listaSalas=new ArrayList<>();
 
     public Sala(int ID, int capacidadDeAsientos, int cantidadDeAsientosPremium, int cantidadDeAsientosVIP,
                 String peliculasProyecta, LocalDate horariosSala, String Distribucion) {
