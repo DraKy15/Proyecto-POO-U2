@@ -2,17 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.menu_cine.Menus;
+package Menus;
 
-import com.mycompany.menu_cine.Cine;
-import com.mycompany.menu_cine.ComprasBoletos;
-import com.mycompany.menu_cine.Reservacion;
+import cine.Cine;
+import ClasesNuevas.ComprasBoletos;
+import ClasesNuevas.Reservacion;
 import java.util.Scanner;
+import cliente.Cliente;
 
-/**
- *
- * @author ameti
- */
+
 public class Menu_Cliente {
 
     Scanner read = new Scanner(System.in);

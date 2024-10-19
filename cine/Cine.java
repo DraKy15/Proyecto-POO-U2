@@ -15,7 +15,6 @@ public class Cine {
     }
 
     public void eliminarPelicula(Pelicula pelicula){
-
         this.listaPeliculas.remove(pelicula);
     }
 

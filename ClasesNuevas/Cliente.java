@@ -1,5 +1,5 @@
 
-package com.mycompany.menu_cine.Menus;
+package ClasesNuevas;
 import java.time.LocalDate;
 
 public class Cliente {
