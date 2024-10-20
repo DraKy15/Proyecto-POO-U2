@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b01e7ab0-8eb1-43ed-ab4a-09cdd62f2e6b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClasesNuevas/Boleto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClasesNuevas/Reservacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menus/Menu_Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Menus/Menu_Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyecto-POO-U2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cine/Cine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliente/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compraBoletos/ComprasBoletos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compraBoletos/ComprasCompleja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compraBoletos/utils/MetodoPago.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelicula/Pelicula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelicula/utils/Categoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sala/Sala.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sala/utils/Asiento.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nfSW8iIK2a1NheKdMiuoc9aua1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "MenuCine",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mgtan/cinepolitos/Proyecto-POO-U2/Proyecto-POO-U2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b01e7ab0-8eb1-43ed-ab4a-09cdd62f2e6b" name="Changes" comment="" />
+      <created>1729362666040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729362666040</updated>
+      <workItem from="1729362667230" duration="1883000" />
+      <workItem from="1729380730439" duration="1013000" />
+      <workItem from="1729381830345" duration="859000" />
+      <workItem from="1729382711130" duration="1652000" />
+      <workItem from="1729384423545" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
